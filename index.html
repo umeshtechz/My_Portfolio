@@ -4,52 +4,34 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS (latest stable version) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Splide CSS for carousel -->
     <link rel="stylesheet" href="css/splide.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/style1.css">
+
+    <!-- AOS CSS for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<style>
-/* Linear bars */
-.progress-bar {
-  width: 0;
-  transition: width 2s;
-}
-
-/* Circle progress bars */
-.progress-circle svg {
-  transform: rotate(-90deg);
-}
-.progress-circle circle {
-  fill: none;
-  stroke-width: 10;
-}
-.progress-circle .bg {
-  stroke: #333;
-}
-.progress-circle .fg {
-  stroke: #00ffff;
-  stroke-linecap: round;
-  stroke-dasharray: 314; /* 2πr, r=50 */
-  stroke-dashoffset: 314;
-  transition: stroke-dashoffset 1.5s linear;
-}
-</style>
-
 </head>
+
 
 <body>
 
@@ -286,107 +268,155 @@
         </section>
         <!--Services Section End -->
 
-
-
-
-
-        <!--my skills start-->
-      <!--my skills start-->
-<div class="row p-5" id="skills">
-    <div class="col-sm-12 skill1" style="padding-top: 80px;">
-        <p class="text-center text-white do">Technical <span id="typing-text3"></span><span id="cursor">|</span></p>
-        <h1 class="text-center text-white"><b>My</b> <span style="color: cyan;">Skills</span></h1>
-        <div class="text-center">
-            <div class="animated-line mx-auto"></div>
-        </div>
-    </div>
-
-    <!-- Linear Progress Bars -->
-    <div class="col-12 col-md-6 py-5 px-4">
-        <h4 class="text-white px-4 text-center">Frontend Development</h4>
-        <div class="d-flex justify-content-between text-white px-4 mt-2"><p>HTML</p><p>90%</p></div>
-        <div class="progress"><div class="progress-bar bg-info" data-progress="90"></div></div>
-
-        <div class="d-flex justify-content-between text-white px-4 mt-4"><p>CSS</p><p>80%</p></div>
-        <div class="progress"><div class="progress-bar bg-info" data-progress="80"></div></div>
-
-        <div class="d-flex justify-content-between text-white px-4 mt-4"><p>JavaScript</p><p>75%</p></div>
-        <div class="progress"><div class="progress-bar bg-info" data-progress="75"></div></div>
-
-        <div class="d-flex justify-content-between text-white px-4 mt-4"><p>React.js</p><p>70%</p></div>
-        <div class="progress"><div class="progress-bar bg-info" data-progress="70"></div></div>
-
-        <h4 class="text-white px-4 mt-5 text-center">Backend Development</h4>
-        <div class="d-flex justify-content-between text-white px-4 mt-2"><p>Java</p><p>70%</p></div>
-        <div class="progress"><div class="progress-bar bg-info" data-progress="70"></div></div>
-
-        <div class="d-flex justify-content-between text-white px-4 mt-4"><p>Spring Boot</p><p>65%</p></div>
-        <div class="progress"><div class="progress-bar bg-info" data-progress="65"></div></div>
-
-        <div class="d-flex justify-content-between text-white px-4 mt-4"><p>MySQL</p><p>75%</p></div>
-        <div class="progress"><div class="progress-bar bg-info" data-progress="75"></div></div>
-
-        <div class="d-flex justify-content-between text-white px-4 mt-4"><p>REST API</p><p>65%</p></div>
-        <div class="progress"><div class="progress-bar bg-info" data-progress="65"></div></div>
-    </div>
-
-    <!-- Circle Progress Bars -->
-    <div class="col-12 col-md-6 py-5 circle-progress">
-        <h4 class="text-center text-light">Soft Skills</h4>
-        <div class="row justify-content-center g-4">
-            <div class="col-6 d-flex justify-content-center">
-                <div class="progress-circle" data-percentage="70">
-                    <svg width="120" height="120">
-                        <circle class="bg" cx="60" cy="60" r="50"></circle>
-                        <circle class="fg" cx="60" cy="60" r="50"></circle>
-                    </svg>
-                    <div class="progress-text text-white">0%</div>
-                    <p class="text-center text-white">Communication</p>
-                </div>
-            </div>
-
-            <div class="col-6 d-flex justify-content-center">
-                <div class="progress-circle" data-percentage="85">
-                    <svg width="120" height="120">
-                        <circle class="bg" cx="60" cy="60" r="50"></circle>
-                        <circle class="fg" cx="60" cy="60" r="50"></circle>
-                    </svg>
-                    <div class="progress-text text-white">0%</div>
-                    <p class="text-center text-white">Problem Solving</p>
-                </div>
-            </div>
-
-            <div class="col-6 d-flex justify-content-center">
-                <div class="progress-circle" data-percentage="90">
-                    <svg width="120" height="120">
-                        <circle class="bg" cx="60" cy="60" r="50"></circle>
-                        <circle class="fg" cx="60" cy="60" r="50"></circle>
-                    </svg>
-                    <div class="progress-text text-white">0%</div>
-                    <p class="text-center text-white">Team Work</p>
-                </div>
-            </div>
-
-            <div class="col-6 d-flex justify-content-center">
-                <div class="progress-circle" data-percentage="80">
-                    <svg width="120" height="120">
-                        <circle class="bg" cx="60" cy="60" r="50"></circle>
-                        <circle class="fg" cx="60" cy="60" r="50"></circle>
-                    </svg>
-                    <div class="progress-text text-white">0%</div>
-                    <p class="text-center text-white">Creativity</p>
-                </div>
+        <!-- Skills Section -->
+    <section id="skills" class="py-5">
+    <div class="container">
+        <div class="row" style="padding-top: 80px">
+            <div class="col-12 text-center mb-5" data-aos="fade-up">
+                <p class="text-white do">Technical <span id="typing-text3"></span><span id="cursor">|</span></p>
+                <h1 class="text-white"><b>My</b> <span style="color: cyan;">Skills</span></h1>
+                <div class="animated-line mx-auto"></div>
             </div>
         </div>
+
+        <div class="row">
+            <!-- Linear Progress Bars -->
+            <div class="col-md-6">
+                <h4 class="text-white text-center">Frontend Development</h4>
+                <div class="mt-3">
+                    <div class="d-flex justify-content-between text-white">
+                        <p>HTML</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" data-progress="90" style="width:0%"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between text-white">
+                        <p>CSS</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" data-progress="80" style="width:0%"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between text-white">
+                        <p>JavaScript</p>
+                        <p>75%</p>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" data-progress="75" style="width:0%"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between text-white">
+                        <p>React.js</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" data-progress="70" style="width:0%"></div>
+                    </div>
+                </div>
+
+                <h4 class="text-white text-center mt-5">Backend Development</h4>
+                <div class="mt-3">
+                    <div class="d-flex justify-content-between text-white">
+                        <p>Java</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" data-progress="70" style="width:0%"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between text-white">
+                        <p>Spring Boot</p>
+                        <p>65%</p>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" data-progress="65" style="width:0%"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between text-white">
+                        <p>MySQL</p>
+                        <p>75%</p>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" data-progress="75" style="width:0%"></div>
+                    </div>
+
+                    <div class="d-flex justify-content-between text-white">
+                        <p>REST API</p>
+                        <p>65%</p>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar bg-info" data-progress="65" style="width:0%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Circle Progress Bars -->
+            <div class="col-md-6">
+                <h4 class="text-center text-light">Soft Skills</h4>
+                <div class="row g-4 justify-content-center mt-4">
+                    <!-- Skill Item -->
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="progress-circle" data-percentage="70">
+                            <svg width="120" height="120">
+                                <circle class="bg" cx="60" cy="60" r="50"></circle>
+                                <circle class="fg" cx="60" cy="60" r="50"></circle>
+                            </svg>
+                            <div class="progress-text text-white">0%</div>
+                            <p class="text-center text-white mt-2">Communication</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="progress-circle" data-percentage="85">
+                            <svg width="120" height="120">
+                                <circle class="bg" cx="60" cy="60" r="50"></circle>
+                                <circle class="fg" cx="60" cy="60" r="50"></circle>
+                            </svg>
+                            <div class="progress-text text-white">0%</div>
+                            <p class="text-center text-white mt-2">Problem Solving</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="progress-circle" data-percentage="90">
+                            <svg width="120" height="120">
+                                <circle class="bg" cx="60" cy="60" r="50"></circle>
+                                <circle class="fg" cx="60" cy="60" r="50"></circle>
+                            </svg>
+                            <div class="progress-text text-white">0%</div>
+                            <p class="text-center text-white mt-2">Team Work</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="progress-circle" data-percentage="80">
+                            <svg width="120" height="120">
+                                <circle class="bg" cx="60" cy="60" r="50"></circle>
+                                <circle class="fg" cx="60" cy="60" r="50"></circle>
+                            </svg>
+                            <div class="progress-text text-white">0%</div>
+                            <p class="text-center text-white mt-2">Creativity</p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 d-flex justify-content-center">
+                        <div class="progress-circle" data-percentage="75">
+                            <svg width="120" height="120">
+                                <circle class="bg" cx="60" cy="60" r="50"></circle>
+                                <circle class="fg" cx="60" cy="60" r="50"></circle>
+                            </svg>
+                            <div class="progress-text text-white">0%</div>
+                            <p class="text-center text-white mt-2">Adaptability</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-<!--my skills end-->
-
-        <!--my skills ends-->
-
-
-
-
+</section>
 
 
         <!--Project Start-->
@@ -657,51 +687,80 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>// Linear progress bars
-const linearBars = document.querySelectorAll('.progress-bar');
-const circleBars = document.querySelectorAll('.progress-circle');
+   <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const linearBars = document.querySelectorAll('.progress-bar');
+  const circleBars = document.querySelectorAll('.progress-circle');
 
-function animateLinearBars() {
-  linearBars.forEach(bar => {
-    const value = bar.dataset.progress;
-    bar.style.width = value + '%';
+  function animateLinearBars() {
+    linearBars.forEach(bar => {
+      if (!bar.classList.contains("animated")) {
+        const value = parseInt(bar.dataset.progress, 10);
+        let width = 0;
+        const step = () => {
+          if (width <= value) {
+            bar.style.width = width + "%";
+            width++;
+            requestAnimationFrame(step);
+          } else {
+            bar.classList.add("animated");
+          }
+        };
+        step();
+      }
+    });
+  }
+
+  function animateCircleBars() {
+    circleBars.forEach(circle => {
+      if (!circle.classList.contains("animated")) {
+        const fg = circle.querySelector('.fg');
+        const text = circle.querySelector('.progress-text');
+        const radius = fg.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+        const target = parseInt(circle.dataset.percentage, 10);
+        fg.style.strokeDasharray = circumference;
+        fg.style.strokeDashoffset = circumference;
+
+        let progress = 0;
+        const step = () => {
+          if (progress <= target) {
+            fg.style.strokeDashoffset = circumference * (1 - progress / 100);
+            text.textContent = progress + "%";
+            progress++;
+            requestAnimationFrame(step);
+          } else {
+            circle.classList.add("animated");
+          }
+        };
+        step();
+      }
+    });
+  }
+
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+
+  window.addEventListener('scroll', () => {
+    const skills = document.getElementById('skills');
+    if (skills && isInViewport(skills)) {
+      animateLinearBars();
+      animateCircleBars();
+    }
   });
-}
 
-function animateCircleBars() {
-  circleBars.forEach(circle => {
-    const fg = circle.querySelector('.fg');
-    const text = circle.querySelector('.progress-text');
-    const radius = fg.r.baseVal.value;
-    const circumference = 2 * Math.PI * radius;
-    const target = circle.dataset.percentage;
-
-    let percent = 0;
-    const interval = setInterval(() => {
-      if (percent >= target) clearInterval(interval);
-      fg.style.strokeDashoffset = circumference * (1 - percent / 100);
-      text.textContent = percent + '%';
-      percent++;
-    }, 20);
-  });
-}
-
-// Animate on scroll
-function isInViewport(el) {
-  const rect = el.getBoundingClientRect();
-  return rect.top < window.innerHeight && rect.bottom > 0;
-}
-
-window.addEventListener('scroll', () => {
-  if (isInViewport(document.getElementById('skills'))) {
+  // Trigger once on load
+  const skills = document.getElementById('skills');
+  if (skills && isInViewport(skills)) {
     animateLinearBars();
     animateCircleBars();
   }
+
+  AOS.init();
 });
 </script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
