@@ -679,88 +679,16 @@
 
     </div>
     <script src="portfolio.js"></script>
-    <script src="js/splide.js"></script>
-    <script src="js/splide.min.js"></script>
-    <script src="js/main.js"></script>
-   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-   <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const linearBars = document.querySelectorAll('.progress-bar');
-  const circleBars = document.querySelectorAll('.progress-circle');
+<script src="js/splide.min.js"></script>
+<script src="js/splide.js"></script>
+<script src="js/main.js"></script>
 
-  function animateLinearBars() {
-    linearBars.forEach(bar => {
-      if (!bar.classList.contains("animated")) {
-        const value = parseInt(bar.dataset.progress, 10);
-        let width = 0;
-        const step = () => {
-          if (width <= value) {
-            bar.style.width = width + "%";
-            width++;
-            requestAnimationFrame(step);
-          } else {
-            bar.classList.add("animated");
-          }
-        };
-        step();
-      }
-    });
-  }
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jl+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
-  function animateCircleBars() {
-    circleBars.forEach(circle => {
-      if (!circle.classList.contains("animated")) {
-        const fg = circle.querySelector('.fg');
-        const text = circle.querySelector('.progress-text');
-        const radius = fg.r.baseVal.value;
-        const circumference = 2 * Math.PI * radius;
-        const target = parseInt(circle.dataset.percentage, 10);
-        fg.style.strokeDasharray = circumference;
-        fg.style.strokeDashoffset = circumference;
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        let progress = 0;
-        const step = () => {
-          if (progress <= target) {
-            fg.style.strokeDashoffset = circumference * (1 - progress / 100);
-            text.textContent = progress + "%";
-            progress++;
-            requestAnimationFrame(step);
-          } else {
-            circle.classList.add("animated");
-          }
-        };
-        step();
-      }
-    });
-  }
-
-  function isInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return rect.top < window.innerHeight && rect.bottom > 0;
-  }
-
-  window.addEventListener('scroll', () => {
-    const skills = document.getElementById('skills');
-    if (skills && isInViewport(skills)) {
-      animateLinearBars();
-      animateCircleBars();
-    }
-  });
-
-  // Trigger once on load
-  const skills = document.getElementById('skills');
-  if (skills && isInViewport(skills)) {
-    animateLinearBars();
-    animateCircleBars();
-  }
-
-  AOS.init();
-});
-</script>
 </body>
 
 </html>
