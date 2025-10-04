@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const roles = ["Full Stack Developer", "Youtuber"];
+    const roles = ["Java Full Stack Developer", "Youtuber"];
     let currentRoleIndex = 0;
     let currentCharIndex = 0;
     const typingSpeed = 80; 
@@ -215,12 +215,6 @@ window.addEventListener("scroll", function () {
 document.querySelector(".scroll-to-top").addEventListener("click", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
-
-
-
-
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
