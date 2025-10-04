@@ -2,7 +2,7 @@
     type: 'loop',
     perPage: 3,
     perMove: 1,
-    speed: 1000,
+    speed: 800,
     autoplay: true,
     interval: 3000, 
     pauseOnHover: false, 
