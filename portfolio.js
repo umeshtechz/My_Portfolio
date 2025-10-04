@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const roles = ["Java Full Stack Developer", "Youtuber"];
+    const roles = ["Full Stack Developer", "Youtuber"];
     let currentRoleIndex = 0;
     let currentCharIndex = 0;
     const typingSpeed = 80; 
@@ -217,6 +217,12 @@ document.querySelector(".scroll-to-top").addEventListener("click", function () {
 });
 
 
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
     const elements = document.querySelectorAll(".fade-in");
     function checkScroll() {
@@ -230,81 +236,4 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", checkScroll);
     checkScroll();
 });
-
-
-
-document.getElementById("contactForm").addEventListener("submit", function(e) {
-    e.preventDefault(); // Form submit ko roko
-    let valid = true;
-
-    // Reset previous errors
-    const fields = ["name","email","phone","subject","message"];
-    fields.forEach(id => {
-        document.getElementById(id).nextElementSibling.textContent = "";
-    });
-
-    // Name validation
-    const name = document.getElementById("name").value.trim();
-    if(name === "") {
-        document.getElementById("name").nextElementSibling.textContent = "Please enter your name.";
-        valid = false;
-    } else if(name.length < 3) {
-        document.getElementById("name").nextElementSibling.textContent = "Name must be at least 3 characters.";
-        valid = false;
-    }
-
-    // Email validation
-    const email = document.getElementById("email").value.trim();
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if(email === "") {
-        document.getElementById("email").nextElementSibling.textContent = "Please enter your email.";
-        valid = false;
-    } else if(!emailRegex.test(email)) {
-        document.getElementById("email").nextElementSibling.textContent = "Please enter a valid email.";
-        valid = false;
-    }
-
-    // Phone validation
-    const phone = document.getElementById("phone").value.trim();
-    const phoneRegex = /^[0-9]{10}$/;
-    if(phone === "") {
-        document.getElementById("phone").nextElementSibling.textContent = "Please enter your mobile number.";
-        valid = false;
-    } else if(!phoneRegex.test(phone)) {
-        document.getElementById("phone").nextElementSibling.textContent = "Phone number must be 10 digits.";
-        valid = false;
-    }
-
-    // Subject validation (5-100 chars)
-    const subject = document.getElementById("subject").value.trim();
-    if(subject === "") {
-        document.getElementById("subject").nextElementSibling.textContent = "Please enter a subject.";
-        valid = false;
-    } else if(subject.length < 5) {
-        document.getElementById("subject").nextElementSibling.textContent = "Subject must be at least 5 characters.";
-        valid = false;
-    } else if(subject.length > 100) {
-        document.getElementById("subject").nextElementSibling.textContent = "Subject cannot exceed 100 characters.";
-        valid = false;
-    }
-
-    // Message validation (20-500 chars)
-    const message = document.getElementById("message").value.trim();
-    if(message === "") {
-        document.getElementById("message").nextElementSibling.textContent = "Please enter your message.";
-        valid = false;
-    } else if(message.length < 20) {
-        document.getElementById("message").nextElementSibling.textContent = "Message must be at least 20 characters.";
-        valid = false;
-    } else if(message.length > 500) {
-        document.getElementById("message").nextElementSibling.textContent = "Message cannot exceed 500 characters.";
-        valid = false;
-    }
-
-    if(valid){
-        this.submit(); 
-    }
-});
-
-
 
