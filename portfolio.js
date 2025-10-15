@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //skillsanimation
 document.addEventListener('DOMContentLoaded', function () {
-    const roles = ["And Professional"];
+    const roles = ["TECHNICAL"];
     let currentRoleIndex = 0;
     let currentCharIndex = 0;
     const typingSpeed = 80; 
@@ -148,60 +148,6 @@ function closeNavbar() {
 
 
 
-//circle-progress-bar
-document.addEventListener("DOMContentLoaded", function () {
-    const progressBars = document.querySelectorAll(".progress-circle");
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                resetProgress(entry.target);
-                setTimeout(() => startProgress(entry.target), 100);
-            }
-        });
-    }, { threshold: 0.5 });
-
-    progressBars.forEach(progress => {
-        observer.observe(progress);
-    });
-
-    function resetProgress(progress) {
-        const circle = progress.querySelector(".fg");
-        const text = progress.querySelector(".progress-text");
-
-        circle.style.transition = "none";
-        circle.style.strokeDashoffset = 314;
-        text.textContent = "0%";
-    }
-
-    function startProgress(progress) {
-        const percentage = progress.getAttribute("data-percentage");
-        const circle = progress.querySelector(".fg");
-        const text = progress.querySelector(".progress-text");
-        const offset = 314 - (314 * percentage) / 100;
-        
-        let count = 0;
-        const interval = setInterval(() => {
-            text.textContent = count + "%";
-            if (count >= percentage) {
-                clearInterval(interval);
-            }
-            count++;
-        }, 15);
-
-        setTimeout(() => {
-            circle.style.transition = "stroke-dashoffset 1s ease-in-out";
-            circle.style.strokeDashoffset = offset;
-        }, 100);
-    }
-});
-
-
-
-
-
-
-
 window.addEventListener("scroll", function () {
     let scrollButton = document.querySelector(".scroll-to-top");
     if (window.scrollY > 300) {
@@ -236,4 +182,3 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("scroll", checkScroll);
     checkScroll();
 });
-

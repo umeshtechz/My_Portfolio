@@ -64,10 +64,12 @@
                 <h4 class="text-white">And I'm <span id="typing-text"></span><span id="cursor">|</span></h4>
                 <p class="text-white" style="    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 ">
-                    Java Full Stack Developer with a B.Tech degree and a strong passion for building efficient,
-                    scalable, and user-friendly web applications.
-                    With expertise in Java, Spring Boot, Hibernate, REST APIs, and modern frontend frameworks like
-                    React/Angular, I develop seamless digital solutions.
+                    I’m a Java Full Stack Developer with a B.Tech degree, passionate about building efficient, scalable,
+                    and user-friendly web applications.
+                    I specialize in backend development using Java, Spring Boot, Hibernate, and REST APIs, and create
+                    modern, responsive frontends with HTML, CSS, JavaScript, Bootstrap, and React.
+                    I enjoy turning ideas into seamless digital solutions and continuously learning new technologies to
+                    deliver high-quality software.
                 </p>
 
                 <div class="d-flex justify-content-center justify-content-md-start">
@@ -78,18 +80,20 @@
                         <p class="contactt">7756XXXX95</p>
                     </h6>
                 </div>
-
-                <button class="cv mb-3 nav1">Download CV</button>
-                <button class="hire nav1">Hire ME Now!</button>
-
+                <button class="cv mb-3 nav1" onclick="window.location.href='img/Umesh_Kumar_Resume.pdf'"
+                    download>Download CV</button>
+                <button class="hire nav1"
+                    onclick="window.open('//www.linkedin.com/in/umesh-kumar-9a6328379', '_blank')">Hire Me
+                    Now!</button>
                 <div class="text-white d-flex gap-2 fs-4 pt-3 justify-content-center justify-content-md-start">
-                    <a href="#" class="text-white social-media"><i class="fab fa-facebook "></i></a>
+                    <a href="https://youtube.com/@umeshtechz?si=8gDz1bLasyDgJwNI" target="_blank"
+                        class="text-white social-media"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="text-white  social-media"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/umeshtechz" class="text-white social-media" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
                     <a href="https://www.instagram.com/ur_umesh_/" target="_blank" class="text-white social-media"><i
                             class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white social-media"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="#" class="text-white  social-media"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://www.youtube.com/@UmeshTechz/community" target="_blank"
-                        class="text-white social-media"><i class="fa-brands fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -102,7 +106,7 @@
 
         <!--about section start-->
         <section id="about">
-            <div class="row py-5 justify-content-center d-flex flex-column-reverse flex-md-row align-items-center">
+            <div class="row py-5 mt-5 justify-content-center d-flex flex-column-reverse flex-md-row align-items-center">
                 <div class="col-sm-12 col-md-6 col-lg-6 text-center">
                     <img src="img/Dp.png" alt="" class="w-75 img-fluid pt-5">
                 </div>
@@ -134,173 +138,290 @@
         <!--about sectio end-->
 
 
-        <!--services start-->
-        <div class="row justify-content-center" id="services">
-            <div class="col-sm-12">
-                <p class="text-center text-white do pt-5 mt-5">WHAT <span id="typing-text2"></span><span
-                        id="cursor">|</span></p>
-                <h1 class="text-center text-white"><b>Our</b> <span style="color:cyan;">Services</span></h1>
-                <div class="text-center">
+        <!-- SERVICES SECTION START -->
+        <section id="services">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p class="section-subtitle text-light">WHAT <span id="typing-text2"
+                            style="color: cyan;"></span><span id="cursor">|</span></p>
+                    <h1 class="section-title text-light"><b>Our</b> <span style="color: cyan;">Services</span></h1>
                     <div class="animated-line mx-auto"></div>
                 </div>
-            </div>
-            <div class="col-11">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 px-5">
-                    <div class="col">
-                        <div class="service-icon1"> <i class="fas fa-code"></i></div>
 
-                        <div class="card cardservice h-75" style="background-color: cyan;">
-                            <div class="card-body cardservice2">
-                                <h5 class="card-title pt-5"><b>Web Development</b></h5>
-                                <p class="card-text">Creating high-performance and scalable websites with latest
-                                    technologies.</p>
-                                <button class="service-btn" onclick="location.href='web-development.html'">Get Web
-                                    Development</button>
-
-                            </div>
+                <div class="services-grid">
+                    <!-- Backend Development -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
                         </div>
+                        <h3 class="service-title text-light">Backend Development</h3>
+                        <p class="service-description text-white">Building robust backend systems using Java, Spring
+                            Boot, Hibernate, and REST APIs with scalable architecture.</p>
+                        <a href="#contact"><button class="service-btn get-contact-btn">Get Contact</button></a>
                     </div>
-                    <div class="col">
-                        <div class="service-icon1"> <i class="fas fa-mobile-alt"></i></div>
 
-                        <div class="card cardservice h-75" style="background-color: rgb(4, 185, 185);">
-                            <div class="card-body cardservice2">
-                                <h5 class="card-title pt-5"><b>App Development</b></h5>
-                                <p class="card-text">Building intuitive, feature-rich mobile apps for multiple
-                                    platforms.</p>
-                                <button class="service-btn" onclick="location.href='app-development.html'">Get App
-                                    Development</button>
-                            </div>
+                    <!-- Frontend Development -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
                         </div>
+                        <h3 class="service-title text-light">Frontend Development</h3>
+                        <p class="service-descriptio text-light">Creating responsive UI using HTML, CSS, JavaScript,
+                            Bootstrap, and React with modern design principles.</p>
+                        <a href="#contact"><button class="service-btn get-contact-btn">Get Contact</button></a>
                     </div>
-                    <div class="col">
-                        <div class="service-icon1"> <i class="fas fa-paint-brush"></i></div>
 
-                        <div class="card cardservice h-75" style="background-color: rgb(4, 185, 185);">
-                            <div class="card-body cardservice2">
-                                <h5 class="card-title pt-5"><b>Graphic Design</b></h5>
-                                <p class="card-text">Designing stunning visuals and branding solutions for businesses.
-                                </p>
-                                <button class="service-btn" onclick="location.href='graphic-design.html'">Get Graphic
-                                    Design</button>
-                            </div>
+                    <!-- Database Management -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
                         </div>
+                        <h3 class="service-title text-light">Database Management</h3>
+                        <p class="service-description text-light">Designing and managing databases with MySQL/PostgreSQL
+                            for efficient data handling and optimization.</p>
+                        <a href="#contact"><button class="service-btn get-contact-btn">Get Contact</button></a>
+                    </div>
+
+                    <!-- Full Stack Solutions -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3 class="service-title text-light">Full Stack Solutions</h3>
+                        <p class="service-description text-light">Delivering complete end-to-end web applications
+                            integrating backend, frontend, and database technologies.</p>
+                        <a href="#contact"><button class="service-btn get-contact-btn">Get Contact</button></a>
+                    </div>
+
+                    <!-- API Development & Integration -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="service-title text-light">API Development & Integration</h3>
+                        <p class="service-description text-light">Creating RESTful APIs and integrating third-party APIs
+                            for seamless communication between systems.</p>
+                        <a href="#contact"><button class="service-btn get-contact-btn">Get Contact</button></a>
+                    </div>
+
+                    <!-- Problem Solving & Debugging -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="service-title text-light">Problem Solving & Debugging</h3>
+                        <p class="service-description text-light">Efficiently troubleshooting, optimizing performance,
+                            and solving complex coding problems with precision.</p>
+                        <a href="#contact"><button class="service-btn get-contact-btn">Get Contact</button></a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!--services end-->
+        </section>
+        <!-- SERVICES SECTION END -->
 
 
-
-        <!--my skills start-->
-        <div class="row p-5" id="skills">
-            <div class="col-sm-12 skill1 pt-5">
-                <p class="text-center text-white do">Technical <span id="typing-text3"></span><span id="cursor">|</span>
-                </p>
-                <h1 class="text-center text-white"><b>My</b> <span style="color: cyan;">Skills</span></h1>
-                <div class="text-center">
+        <!-- SKILLS SECTION START -->
+        <section id="skills">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p class="section-subtitle text-light">MY <span id="typing-text3" style="color: cyan;"></span><span
+                            id="cursor">|</span>
+                    </p>
+                    <h1 class="section-title"><b></b> <span style="color: cyan;">Skills</span></h1>
                     <div class="animated-line mx-auto"></div>
                 </div>
+
+                <div class="skills-grid">
+                    <!-- Backend Technologies -->
+                    <div class="skill-category text-light">
+                        <div class="category-header">
+                            <div class="category-icon java-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h3 class="category-title">Backend Technologies</h3>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fab fa-java tech-icon" style="color: var(--java-color);"></i>
+                                    Java
+                                </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress java-progress" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fas fa-leaf tech-icon" style="color: var(--spring-color);"></i>
+                                    Spring Boot
+                                </span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress spring-progress" data-width="88"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fas fa-project-diagram tech-icon"></i>
+                                    Spring MVC
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress spring-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fas fa-database tech-icon"></i>
+                                    Hibernate/JPA
+                                </span>
+                                <span class="skill-percentage">87%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Technologies -->
+                    <div class="skill-category text-light">
+                        <div class="category-header">
+                            <div class="category-icon react-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <h3 class="category-title">Frontend Technologies</h3>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fab fa-html5 tech-icon" style="color: #e34f26;"></i>
+                                    HTML5/CSS3
+                                </span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fab fa-js-square tech-icon" style="color: #f7df1e;"></i>
+                                    JavaScript
+                                </span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fab fa-react tech-icon" style="color: var(--react-color);"></i>
+                                    React.js
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress react-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fab fa-bootstrap tech-icon" style="color: #7952b3;"></i>
+                                    Bootstrap
+                                </span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database & APIs -->
+                    <div class="skill-category text-light">
+                        <div class="category-header">
+                            <div class="category-icon database-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 class="category-title">Database & Tools</h3>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fas fa-database tech-icon" style="color: #4479a1;"></i>
+                                    MySQL
+                                </span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress database-progress" data-width="90"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fas fa-database tech-icon" style="color: #336791;"></i>
+                                    PostgreSQL
+                                </span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress database-progress" data-width="85"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fas fa-code tech-icon"></i>
+                                    REST APIs
+                                </span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">
+                                    <i class="fab fa-git-alt tech-icon" style="color: #f05032;"></i>
+                                    Git/GitHub
+                                </span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!--progress bar section-->
-            <div class="col-12 col-sm-12 col-md-6 py-5 px-4">
-                <div class="d-flex justify-content-between text-white px-4 mt-2">
-                    <p>HTML</p>
-                    <p>90%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-info" data-aos="fade-right" data-aos-easing="linear"
-                        data-aos-duration="1500" role="progressbar" aria-label="Basic example" style="width: 90%"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        </section>
+        <!-- SKILLS SECTION END -->
 
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between text-white px-4 mt-4">
-                    <p>CSS</p>
-                    <p>80%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-label="Basic example" style="width: 80%"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="fade-right"
-                        data-aos-easing="linear" data-aos-duration="1500">
-
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between text-white px-4 mt-4">
-                    <p>Java</p>
-                    <p>70%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-label="Basic example" style="width: 70%"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="fade-right"
-                        data-aos-easing="linear" data-aos-duration="1500">
-
-                    </div>
-                </div>
-                <div class="d-flex justify-content-between text-white px-4 mt-4">
-                    <p>JavaScript</p>
-                    <p>75%</p>
-                </div>
-                <div class="progress">
-                    <div class="progress-bar bg-info" role="progressbar" aria-label="Basic example" style="width: 75%"
-                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-
-                    </div>
-                </div>
-
-
-            </div>
-            <!--progress bar section end-->
-
-
-
-            <!--circle progressbar section-->
-
-            <div class="col-12 col-sm-12 col-md-6 py-5 circle-proggress ">
-                <div class="progress-container">
-                    <div class="progress-circle" data-percentage="90">
-                        <svg width="120" height="120">
-                            <circle class="bg" cx="60" cy="60" r="50"></circle>
-                            <circle class="fg" cx="60" cy="60" r="50"></circle>
-                        </svg>
-                        <div class="progress-text text-white">0%</div>
-                        <p class="text-center text-white">Team Work</p>
-                    </div>
-
-                    <div class="progress-circle" data-percentage="80">
-                        <svg width="120" height="120">
-                            <circle class="bg" cx="60" cy="60" r="50"></circle>
-                            <circle class="fg" cx="60" cy="60" r="50"></circle>
-                        </svg>
-                        <div class="progress-text text-white">0%</div>
-                        <p class="text-center text-white">Creativity</p>
-                    </div>
-                    <div class="progress-circle " data-percentage="70">
-                        <svg width="120" height="120">
-                            <circle class="bg" cx="60" cy="60" r="50"></circle>
-                            <circle class="fg" cx="60" cy="60" r="50"></circle>
-                        </svg>
-                        <div class="progress-text text-white">0%</div>
-                        <p class="text-center text-white">Communication</p>
-                    </div>
-
-                    <div class="progress-circle" data-percentage="55">
-                        <svg width="120" height="120">
-                            <circle class="bg" cx="60" cy="60" r="50"></circle>
-                            <circle class="fg" cx="60" cy="60" r="50"></circle>
-                        </svg>
-                        <div class="progress-text text-white">0%</div>
-                        <p class="text-center text-white">Project Management</p>
-                    </div>
-
-
-                </div>
-            </div>
-            <!--circle progressbar section end-->
-
-        </div>
-        <!--my skills ends-->
 
 
 
@@ -314,88 +435,103 @@
                     <h1 class="text-center text-white"><b>Latest</b> <span style="color: cyan;">Project</span></h1>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-11">
-                        <section class="splide my-5" id="image-slider">
+                    <div class="col-12 col-md-10 col-lg-12">
+                        <section class="splide my-5 ms-5 ps-3" id="image-slider">
                             <div class="splide__track">
-<ul class="splide__list">
+                                <ul class="splide__list">
 
-  <!-- Weather App -->
-  <li class="splide__slide px-2">
-    <div class="card" style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
-      <img src="img/weatherImage.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Weather App">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title">Weather App</h5>
-        <div class="h-50">
-          <p class="card-text">Real-time weather app using OpenWeather API.</p>
-        </div>
-        <a href="https://umeshtechz.github.io/quiz-app/" target="_blank" class="btn btn-outline-dark  mt-auto text-nowrap d-flex justify-content-center" style="width: 200px; margin: 0 auto;">View</a>
+                                    <!-- Weather App -->
+                                    <li class="splide__slide px-2">
+                                        <div class="card"
+                                            style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
+                                            <img src="img/weatherImage.png" class="card-img-top"
+                                                style="height: 250px; object-fit: cover;" alt="Weather App">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title">Weather App</h5>
+                                                <div class="h-50">
+                                                    <p class="card-text">Real-time weather app using OpenWeather API.
+                                                    </p>
+                                                </div>
+                                                <a href="https://umeshtechz.github.io/Weather-App/" target="_blank"
+                                                    class="btn btn-outline-dark  mt-auto text-nowrap d-flex justify-content-center"
+                                                    style="width: 200px; margin: 0 auto;">View</a>
 
 
-      </div>
-    </div>
-  </li>
+                                            </div>
+                                        </div>
+                                    </li>
 
-  <!-- Quiz App -->
-  <li class="splide__slide px-2">
-    <div class="card" style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
-      <img src="img/Quiz.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Quiz App">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title text-dark">Quiz App</h5>
-        <p class="card-text text-muted flex-grow-1">Simple Quiz App built using JavaScript. Answer multiple-choice questions and see your score instantly.</p>
-     <a href="https://umeshtechz.github.io/quiz-app/" target="_blank" class="btn btn-outline-dark  mt-auto text-nowrap d-flex justify-content-center" style="width: 200px; margin: 0 auto;">View</a>
-    </div>
-    </div>
-  </li>
+                                    <!-- Quiz App -->
+                                    <li class="splide__slide px-2">
+                                        <div class="card"
+                                            style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
+                                            <img src="img/Quiz.png" class="card-img-top"
+                                                style="height: 250px; object-fit: cover;" alt="Quiz App">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title text-dark">Quiz App</h5>
+                                                <p class="card-text text-muted flex-grow-1">Simple Quiz App built using
+                                                    JavaScript. Answer multiple-choice questions and see your score
+                                                    instantly.</p>
+                                                <a href="https://umeshtechz.github.io/quiz-app/" target="_blank"
+                                                    class="btn btn-outline-dark  mt-auto text-nowrap d-flex justify-content-center"
+                                                    style="width: 200px; margin: 0 auto;">View</a>
+                                            </div>
+                                        </div>
+                                    </li>
 
-  <!-- Text-to-Voice App -->
-  <li class="splide__slide px-2">
-    <div class="card" style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
-      <img src="img/TextToVoice.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Text-to-Voice App">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title text-dark">Text-to-Voice App</h5>
-        <p class="card-text text-muted flex-grow-1">Text-to-Voice App built using JavaScript. Converts any typed text into clear, real-time speech with a user-friendly interface.</p>
-        <a href="https://umeshtechz.github.io/quiz-app/" target="_blank" class="btn btn-outline-dark mt-auto text-nowrap">View Project</a>
-      </div>
-    </div>
-  </li>
+                                    <!-- Text-to-Voice App -->
+                                    <li class="splide__slide px-2">
+                                        <div class="card"
+                                            style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
+                                            <img src="img/TextToVoice.png" class="card-img-top"
+                                                style="height: 250px; object-fit: cover;" alt="Text-to-Voice App">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title text-dark">Text-to-Voice App</h5>
+                                                <p class="card-text text-muted flex-grow-1">Text-to-Voice App built
+                                                    using JavaScript. Converts any typed text into clear, real-time
+                                                    speech with a user-friendly interface.</p>
+                                                <a href="https://umeshtechz.github.io/Text-To-Voice_converter/"
+                                                    target="_blank"
+                                                    class="btn btn-outline-dark mt-auto text-nowrap">View Project</a>
+                                            </div>
+                                        </div>
+                                    </li>
 
-  <!-- Simple Calculator -->
-  <li class="splide__slide px-2">
-    <div class="card" style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
-      <img src="img/Calculator.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Calculator App">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title text-dark">Simple Calculator</h5>
-        <p class="card-text text-muted flex-grow-1">Simple Calculator App built using JavaScript, HTML, and CSS.</p>
-        <a href="https://umeshtechz.github.io/Text-To-Voice_converter/" target="_blank" class="btn btn-outline-dark mt-auto text-nowrap">View Project</a>
-      </div>
-    </div>
-  </li>
+                                    <!-- Simple Calculator -->
+                                    <li class="splide__slide px-2">
+                                        <div class="card"
+                                            style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
+                                            <img src="img/Calculator.png" class="card-img-top"
+                                                style="height: 250px; object-fit: cover;" alt="Calculator App">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title text-dark">Simple Calculator</h5>
+                                                <p class="card-text text-muted flex-grow-1">Simple Calculator App built
+                                                    using JavaScript, HTML, and CSS.</p>
+                                                <a href="https://umeshtechz.github.io/Simple-Calculator/"
+                                                    target="_blank"
+                                                    class="btn btn-outline-dark mt-auto text-nowrap">View Project</a>
+                                            </div>
+                                        </div>
+                                    </li>
 
-  <!-- Music Player -->
-  <li class="splide__slide px-2">
-    <div class="card" style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
-      <img src="img/Music.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Music Player">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title text-dark">Music Player</h5>
-        <p class="card-text text-muted flex-grow-1">Simple Music Player using JavaScript to play and control your favorite songs with a user-friendly interface.</p>
-        <a href="https://umeshtechz.github.io/Music-Player/" target="_blank" class="btn btn-outline-dark mt-auto text-nowrap">View Project</a>
-      </div>
-    </div>
-  </li>
+                                    <!-- Music Player -->
+                                    <li class="splide__slide px-2">
+                                        <div class="card"
+                                            style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
+                                            <img src="img/Music.png" class="card-img-top"
+                                                style="height: 250px; object-fit: cover;" alt="Music Player">
+                                            <div class="card-body d-flex flex-column">
+                                                <h5 class="card-title text-dark">Music Player</h5>
+                                                <p class="card-text text-muted flex-grow-1">Simple Music Player using
+                                                    JavaScript to play and control your favorite songs with a
+                                                    user-friendly interface.</p>
+                                                <a href="https://umeshtechz.github.io/Music-Player/" target="_blank"
+                                                    class="btn btn-outline-dark mt-auto text-nowrap">View Project</a>
+                                            </div>
+                                        </div>
+                                    </li>
 
-  <!-- Fun Quiz -->
-  <li class="splide__slide mx-2">
-    <div class="card" style="width: 100%; max-width: 350px; height: 450px; display: flex; flex-direction: column;">
-      <img src="img/Quiz.png" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Fun Quiz">
-      <div class="card-body d-flex flex-column">
-        <h5 class="card-title text-dark">Quiz App</h5>
-        <p class="card-text text-muted flex-grow-1">A simple JavaScript-based quiz application where users can answer multiple-choice questions and instantly see their score. Interactive, lightweight, and easy to use.</p>
-        <a href="https://umeshtechz.github.io/Simple-Calculator/" target="_blank" class="btn btn-outline-dark mt-auto text-nowrap">View Project</a>
-      </div>
-    </div>
-  </li>
-
-</ul>
+                                </ul>
 
 
 
@@ -416,63 +552,63 @@
 
 
 
-        <!-- Contact Section Start -->
-
-        <section id="contact" class="  text-white">
-            <div class="container">
-                <h1 class="text-center mb-4 nav2"><b>Get in</b> <span style="color: cyan;">Touch</span></h1>
-                <div class="text-center">
-                    <div class="animated-line mx-auto"></div>
-                </div>
-                <div class="row py-5">
-                    <!-- Contact Info -->
-                    <div class="col-md-5 py-3">
-                        <h4>Contact Information</h4>
-                        <p><i class="fas fa-envelope"></i> Email: umesh123@example.com</p>
-                        <p><i class="fas fa-phone"></i> Mobile: +91 77XXXX1195</p>
-                        <p><i class="fas fa-map-marker-alt"></i> Location: Lucknow, India</p>
-                        <div class="social-icons mt-3">
-                            <a href="#" class="text-white me-2 fs-4"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="text-white me-2 fs-4"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white me-2 fs-4"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#" class="text-white fs-4 me-2"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="text-white fs-4 me-2"><i class="fa-brands fa-youtube"></i></a>
-
-                        </div>
-                    </div>
-                    <!-- Contact Form -->
-                    <div class="col-md-7">
-                        <form>
-                            <div class="row mb-3">
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Full Name" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="email" class="form-control" placeholder="Email Address" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="number" class="form-control" placeholder="Mobile Number" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" class="form-control" placeholder="Email Subject" required>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                            </div>
+        <!-- CONTACT FORM SECTION -->
+        <section id="contact">
+            <div class="contact-container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-form">
+                            <h1 class="text-center text-light nav2"><b>Get in</b> <span
+                                    style="color: cyan;">Touch</span></h1>
                             <div class="text-center">
-                                <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill"
-                                    style="background-color: #3b9df1; border: none;">
-                                    Send Message
-                                </button>
+                                <div class="animated-line mx-auto"></div>
                             </div>
-                        </form>
+                            <p class="text-center mb-5">Interested in our services? Fill out the form below and we'll
+                                get back to you as soon as possible.</p>
 
+                            <!-- Formspree Form -->
+                            <form id="contactForm" action="https://formspree.io/f/mjkaovrw" method="POST" novalidate>
+                                <div class="row mb-3">
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" id="fullName" name="name" class="form-control"
+                                            placeholder="Full Name" required>
+                                        <small class="text-danger" id="nameError"></small>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="email" id="email" name="email" class="form-control"
+                                            placeholder="Email Address" required>
+                                        <small class="text-danger" id="emailError"></small>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="tel" id="mobile" name="mobile" class="form-control"
+                                            placeholder="Mobile Number" required>
+                                        <small class="text-danger" id="mobileError"></small>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <input type="text" id="subject" name="subject" class="form-control"
+                                            placeholder="Email Subject" required>
+                                        <small class="text-danger" id="subjectError"></small>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="form-control" id="message" name="message" rows="5"
+                                        placeholder="Your Message" required></textarea>
+                                    <small class="text-danger" id="messageError"></small>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn submit-btn px-5 py-2">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Contact Section End -->
+
+    </div>
+    </div>
+    </section>
+    <!-- Contact Section End -->
 
 
 
@@ -481,45 +617,48 @@
 
 
 
-        <!-- Footer Section Start -->
-        <footer class=" text-white py-5  mt-5"
-            style="border-top-right-radius: 10px;border-top-left-radius: 10px; background-color: #070b0796;">
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5 class="nav1"><b>About Me</b></h5>
-                        <p class="nav1">Java Full Stack Developer passionate about building efficient, scalable, and
-                            user-friendly web applications.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="nav1"><b>Quick Links</b></h5>
-                        <ul class="list-unstyled nav2">
-                            <li><a href="#home" class="text-white text-decoration-none nav1">Home</a></li>
-                            <li><a href="#about" class="text-white text-decoration-none nav1">About</a></li>
-                            <li><a href="#services" class="text-white text-decoration-none nav1">Services</a></li>
-                            <li><a href="#contact" class="text-white text-decoration-none nav1">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h5 class="nav1"><b>Follow Me</b></h5>
-                        <div class="d-flex justify-content-center gap-3">
-                            <a href="#" class="text-white fs-4"><i class="fab fa-facebook"></i></a>
-                            <a href="#" class="text-white fs-4"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="text-white fs-4"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#" class="text-white fs-4"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" class="text-white fs-4"><i class="fa-brands fa-youtube"></i></a>
-
-                        </div>
-                    </div>
+    <!-- Footer Section Start -->
+    <footer class=" text-white py-5 mx-2  mt-5"
+        style="border-top-right-radius: 15px;border-top-left-radius: 15px; background-color: #070b0796;">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="nav1"><b>About Me</b></h5>
+                    <p class="nav1">Java Full Stack Developer passionate about building efficient, scalable, and
+                        user-friendly web applications.</p>
                 </div>
-                <hr class="bg-light">
-                <div class=" text-center">
-                    <p class="nav1">CRAFTED WITH ❤️ BY UMESH KUMAR</p>
-                    <small class="nav1">© 2025 Umesh Kumar | All Rights Reserved</small>
+                <div class="col-md-4">
+                    <h5 class="nav1"><b>Quick Links</b></h5>
+                    <ul class="list-unstyled nav2">
+                        <li><a href="#home" class="text-white text-decoration-none nav1">Home</a></li>
+                        <li><a href="#about" class="text-white text-decoration-none nav1">About</a></li>
+                        <li><a href="#services" class="text-white text-decoration-none nav1">Services</a></li>
+                        <li><a href="#contact" class="text-white text-decoration-none nav1">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="nav1"><b>Follow Me</b></h5>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="https://youtube.com/@umeshtechz?si=8gDz1bLasyDgJwNI" target="_blank"
+                            class="text-white social-media"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-white  social-media"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/umeshtechz" class="text-white social-media" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ur_umesh_/" target="_blank"
+                            class="text-white social-media"><i class="fab fa-instagram"></i></a>
+
+                    </div>
                 </div>
             </div>
-        </footer>
-        <!-- Footer Section End -->
+            <hr class="bg-light">
+            <div class=" text-center">
+                <p class="nav1">CRAFTED WITH ❤️ BY UMESH KUMAR</p>
+                <small class="nav1">© 2025 Umesh Kumar | All Rights Reserved</small>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
 
 
 
@@ -536,6 +675,54 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // stop default submission
+
+            let isValid = true;
+
+            const name = document.getElementById("fullName").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mobile = document.getElementById("mobile").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            document.querySelectorAll("small.text-danger").forEach(e => e.textContent = "");
+
+            if (name.length < 3) {
+                document.getElementById("nameError").textContent = "Full name must be at least 3 characters.";
+                isValid = false;
+            }
+
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailPattern.test(email)) {
+                document.getElementById("emailError").textContent = "Please enter a valid email address.";
+                isValid = false;
+            }
+
+            const phonePattern = /^[0-9]{10}$/;
+            if (!phonePattern.test(mobile)) {
+                document.getElementById("mobileError").textContent = "Mobile number must be 10 digits.";
+                isValid = false;
+            }
+
+            if (subject.length === 0) {
+                document.getElementById("subjectError").textContent = "Please enter a subject.";
+                isValid = false;
+            }
+
+            if (message.length < 10) {
+                document.getElementById("messageError").textContent = "Message must be at least 10 characters.";
+                isValid = false;
+            }
+
+            if (isValid) {
+                // submit manually
+                this.submit();
+            }
+        });
+    </script>
+
     <script>
         AOS.init();
     </script>
